@@ -49,7 +49,7 @@
             $result=pg_query($conn, "SELECT product_id, product_name, price, pro_qty, pro_image, cat_name
             FROM product a, category b
             WHERE a.cat_id = b.cat_id ORDER BY prodate DESC");
-            while($row=pg_fetch_array($result, NULL, MYSQL_ASSOC)){	
+            while($row=pg_fetch_array($result, NULL, PGSQL_ASSOC)){	
 			?>
 			<tr>
               <td ><?php echo $No ?></td>
@@ -59,11 +59,11 @@
               <td ><?php echo $row["pro_qty"]; ?></td>
               <td><?php echo $row["cat_name"]; ?></td>
              <td align='center' class='cotNutChucNang'>
-                <img src='img/<?php echo $row['Pro_image']; ?>' border='0' width="50" height="50"  /></td>
-             <td align='center' class='cotNutChucNang'><a href="?page=update_product&&id=<?php echo $row["Product_ID"]; ?>">
+                <img src='img/<?php echo $row['pro_image']; ?>' border='0' width="50" height="50"  /></td>
+             <td align='center' class='cotNutChucNang'><a href="?page=update_product&&id=<?php echo $row["product_id"]; ?>">
              <img src='images/edit.png' border='0'/></a></td>
              <td style='text-align:center'>
-             <a href="index.php?page=product_management&&funtion=del&&id=<?php echo $row["Product_ID"]; ?>"
+             <a href="index.php?page=product_management&&funtion=del&&id=<?php echo $row["product_id"]; ?>"
              onclick="return deleteConfirm()">
             <img src='images/delete.png' border='0' /></a></td>
              </tr>

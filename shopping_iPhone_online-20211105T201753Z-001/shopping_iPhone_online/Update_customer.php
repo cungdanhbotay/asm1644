@@ -7,7 +7,7 @@
 $query="SELECT custname, address, email, telephone
 			FROM customer WHERE username='". $_SESSION["us"] . "'";
 	$result=pg_query($conn,$query) or die(pg_errormessage($conn));
-	$row=pg_fetch_array($result, NULL, MYSQL_ASSOC);
+	$row=pg_fetch_array($result, NULL, PGSQL_ASSOC);
 	$us=$_SESSION["us"];
 	$email=$row["email"];
 	$fullname=$row["custname"];
