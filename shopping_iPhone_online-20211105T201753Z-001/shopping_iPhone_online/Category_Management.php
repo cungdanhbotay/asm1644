@@ -26,8 +26,8 @@
             <?php 
             include_once("connection.php");
             $No=1;
-            $result = mysqli_query($conn, "SELECT * FROM category");
-            while($row=mysqli_fetch_array($result,MYSQLI_ASSOC))
+            $result = pg_query($conn, "SELECT * FROM category");
+            while($row=pg_fetch_array($result, NULL, MYSQL_ASSOC))
             {
             ?>
 
@@ -35,8 +35,8 @@
 			<tr>
               <td class="cotCheckBox"><?php echo $No; ?></td>
               
-              <td><?php echo $row["Cat_Name"]; ?></td>
-              <td><?php echo $row["Cat_Des"]; ?></td>
+              <td><?php echo $row["cat_name"]; ?></td>
+              <td><?php echo $row["cat_des"]; ?></td>
               <td style='text-align:center'><a href="?page=update_category&&id=<?php echo $row["Cat_ID"]; ?>">
               <img src='images/edit.png' border='0'  /></a></td>
 
@@ -68,7 +68,7 @@
         if(isset($_GET["function"])=="del"){
             if(isset($_GET["id"])){
                 $id = $_GET["id"];
-                mysqli_query($conn, "DELETE FROM category WHERE Cat_ID='$id'");
+                pg_query($conn, "DELETE FROM category WHERE cat_id='$id'");
             }
         }
         ?>
