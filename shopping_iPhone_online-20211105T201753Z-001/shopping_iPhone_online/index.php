@@ -63,8 +63,8 @@
 				<div>
 					<div class="col-sm-6" >
 						<div class="logo pull-left" >
-                            <a href="index.php" style="background-color:#;color:#FFF">Shopdochoi
-                            <img src="img/dong-ho-dinh-vi-tre-em-BANNER-OK.jpg" width="50" height="50"></a>
+                            <a href="index.php" style="background-color:#;color:#FFF">children's toys 
+                            <img src="img/dong-ho-dinh-vi-tre-em-BANNER-OK.jpg" width="75" height="75"></a>
 						</div>
 					</div>
 						<div class="mainmenu pull-left">
@@ -202,11 +202,10 @@
             <div class="row">
                 <div class="col-md-3 col-sm-6">
                     <div class="footer-about-us">
-                        <h2><span>Shopping iPhone Online</span></h2>
-                        <p>A14 Bionic rockets past every other smartphone chip. The Pro camera system takes low-light photography to the next level — with an even bigger jump on iPhone 12 Pro Max. And Ceramic Shield delivers four times better drop performance. Let’s see what this thing can do.</p>
+                        <h2><span>children's toys</span></h2>
+                        <p>The store specializes in selling toys for children from 5 years old to 12 years old, free shipping nationwide.</p>
                         <div class="footer-social">
-                            <a href="https://www.facebook.com/profile.php?id=100012763472006" target="_blank"><i class="fa fa-facebook"></i></a>
-                            <a href="https://https://www.youtube.com/watch?v=65JrtwtTOdc&t=2s" target="_blank"><i class="fa fa-youtube"></i></a>
+                            <a href="https://www.facebook.com/profile.php?id=100013635948781" target="_blank"><i class="fa fa-facebook"></i></a>
                         </div>
                     </div>
                 </div>
@@ -218,7 +217,7 @@
             <div class="row">
                 <div class="col-md-8">
                     <div class="copyright">
-                        <p>&copy; Shopping iPhone Online </p>
+                        <p>&copy; children's toys </p>
                     </div>
                 </div>
                 
