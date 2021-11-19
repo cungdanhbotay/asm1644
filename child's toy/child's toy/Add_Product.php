@@ -85,7 +85,7 @@
 	}
 ?>
 <div class="container">
-	<h2>Add Product</h2>
+	<h2>Adding new Product</h2>
 	 	<form id="frmProduct" name="frmProduct" method="post" enctype="multipart/form-data" action="" class="form-horizontal" role="form">
 				<div class="form-group">
 					<label for="txtTen" class="col-sm-2 control-label">Product ID(*):  </label>
@@ -105,6 +105,7 @@
 							<?php bind_Category_List($conn); ?>
 						</div>
                 </div>  
+				
                 <div class="form-group">  
                     <label for="lblGia" class="col-sm-2 control-label">Price(*):  </label>
 							<div class="col-sm-10">
