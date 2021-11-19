@@ -64,7 +64,7 @@
 					<div class="col-sm-6" >
 						<div class="logo pull-left" >
                             <a href="index.php" style="background-color:#;color:#FFF">children's toys 
-                            <img src="img/logo.png" width="100" height="100"></a>
+                            <img src="img/pngtree-toy-kid-cartoon-illustration-png-image_4670883.jpg" width="100" height="100"></a>
 						</div>
 					</div>
 						<div class="mainmenu pull-left">
