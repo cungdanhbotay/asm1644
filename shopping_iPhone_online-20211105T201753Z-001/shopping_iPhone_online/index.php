@@ -64,7 +64,7 @@
 					<div class="col-sm-6" >
 						<div class="logo pull-left" >
                             <a href="index.php" style="background-color:#;color:#FFF">children's toys 
-                            <img src="img/dong-ho-dinh-vi-tre-em-BANNER-OK.jpg" width="75" height="75"></a>
+                            <img src="img/logo.png" width="100" height="100"></a>
 						</div>
 					</div>
 						<div class="mainmenu pull-left">
