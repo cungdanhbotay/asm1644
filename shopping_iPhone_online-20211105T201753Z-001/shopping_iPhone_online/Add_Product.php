@@ -85,7 +85,7 @@
 	}
 ?>
 <div class="container">
-	<h2>Adding new Product</h2>
+	<h2>Add Product</h2>
 	 	<form id="frmProduct" name="frmProduct" method="post" enctype="multipart/form-data" action="" class="form-horizontal" role="form">
 				<div class="form-group">
 					<label for="txtTen" class="col-sm-2 control-label">Product ID(*):  </label>
