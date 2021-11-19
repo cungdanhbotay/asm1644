@@ -69,7 +69,7 @@
 					</div>
 						<div class="mainmenu pull-left">
 							<ul class="nav navbar-nav collapse navbar-collapse">
-								<li><a href="index.php" class="active">Home</a></li>
+								<li><a href="index.php" class="active">HOME</a></li>
                                 <?php
                                     if(isset($_SESSION['admin']) && $_SESSION['admin']==1){
                                 ?> 
@@ -85,7 +85,7 @@
                                    if (isset($_SESSION['us']) && $_SESSION['us']!=""){
                                        ?> 
                                        <li><a href="?page=update_customes">
-                                       <i class="fa fa-lock"></i>Hi, <?php echo $_SESSION['us']?></a>
+                                       <i class="fa fa-lock"></i>wellcome, <?php echo $_SESSION['us']?></a>
                                         </li>
                                            <li><a href="?page=logout">
                                             <i class="fa fa-crosshairs"></i>Logout</a></li>
