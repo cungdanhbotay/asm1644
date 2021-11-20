@@ -11,7 +11,7 @@ include_once("connection.php");
 						<div class="caption-group">
 
 					</li>
-					<li><img src="img/" alt="Slide">
+					<li><img src="img/71qTLWgQinL._AC_UL320_.jpg" alt="Slide">
 						<div class="caption-group">
 
 					</li>
