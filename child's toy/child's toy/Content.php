@@ -7,11 +7,11 @@ include_once("connection.php");
 			<div class="block-slider block-slider4">
 				<ul class="" id="bxslider-home4">
 					<li>
-						<img src="img/dH67aae3af1806459ab2f56bc176cf323e2.jpg_220x220.jpg" alt="Slide">
+						<img src="img/10-Off-Week-42-Christmas-Online-Assets-2021-V2-Extra-10-Wk-42-Promo-New-HP-final-1800x560px.webp" alt="Slide">
 						<div class="caption-group">
 
 					</li>
-					<li><img src="img/H2ec10d5bed4045d7af182ccd589a37b2o.jpg_220x220.jpg" alt="Slide">
+					<li><img src="img/" alt="Slide">
 						<div class="caption-group">
 
 					</li>
