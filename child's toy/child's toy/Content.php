@@ -11,10 +11,7 @@ include_once("connection.php");
 						<div class="caption-group">
 
 					</li>
-					<li><img src="img/download.jfif" alt="Slide">
-						<div class="caption-group">
-
-					</li>
+					
 					<li><img src="img/banner-barbie-689x327.jpg" alt="Slide">
 						<div class="caption-group">
 
