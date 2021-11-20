@@ -8,10 +8,10 @@
 <?php
 if(isset($_POST['btnRegister'])){
     $us = $_POST['txtUsername'];
-    $email = $_POST['txtEmail'];
     $pass1 = $_POST['txtPass1'];
     $pass2 = $_POST['txtPass2'];
     $fullname = $_POST['txtFullname'];
+    $email = $_POST['txtEmail'];
     $address = $_POST['txtAddress'];
     $tel = $_POST['txtTel'];
 
@@ -23,7 +23,7 @@ if(isset($_POST['btnRegister'])){
     $year = $_POST['slYear'];
 
     $err = "" ;
-    if($us==""||$email==""||$pass1==""||$pass2==""||$fullname==""||$address==""||!isset($sex)){
+    if($us==""||$pass1==""||$pass2==""||$fullname==""||$email==""||$address==""||!isset($sex)){
         $err .="<li>Enter fields with mark(*). please</li>";
     }
     if(strlen($pass1)<=5){
@@ -48,7 +48,7 @@ if(isset($_POST['btnRegister'])){
         {
             pg_query($conn, "INSERT INTO customer (username, password,custname,gender,address,telephone,email,
             cusdate,cusmonth,cusyear,ssn,activecode,state)
-            VALUES ('$us', '$email', '$pass', '$fullname', $sex, '$address', '$tel', $date, $month, $year, '', '', 0)") 
+            VALUES ('$us', '$pass', '$fullname', $sex, '$address', '$tel', '$email', $date, $month, $year, '', '', 0)") 
             or die(pg_errormessage($conn));
                echo "You have registered successfully";
         }
@@ -69,13 +69,7 @@ if(isset($_POST['btnRegister'])){
 							      <input type="text" name="txtUsername" id="txtUsername" class="form-control" placeholder="Username" value="<?php if(isset ($us)) echo $us?>"/>
 							</div>
                       </div>  
-                      <div class="form-group">      
-                            <label for="lblEmail" class="col-sm-2 control-label">Email(*):  </label>
-							<div class="col-sm-10">
-							      <input type="text" name="txtEmail" id="txtEmail" value="<?php if(isset($email)) echo $email;?>" class="form-control" placeholder="Email"/>
-							</div>
-                       </div> 
-
+                      
                        <div class="form-group">   
                             <label for="" class="col-sm-2 control-label">Password(*):  </label>
 							<div class="col-sm-10">
@@ -96,7 +90,13 @@ if(isset($_POST['btnRegister'])){
 							      <input type="text" name="txtFullname" id="txtFullname" value="<?php if(isset($fullname)) echo $fullname;?>" class="form-control" placeholder="Enter Fullname"/>
 							</div>
                        </div> 
-                      
+                       
+                       <div class="form-group">      
+                            <label for="lblEmail" class="col-sm-2 control-label">Email(*):  </label>
+							<div class="col-sm-10">
+							      <input type="text" name="txtEmail" id="txtEmail" value="<?php if(isset($email)) echo $email;?>" class="form-control" placeholder="Email"/>
+							</div>
+                       </div>  
                        
                         <div class="form-group">   
                              <label for="lblDiaChi" class="col-sm-2 control-label">Address(*):  </label>
